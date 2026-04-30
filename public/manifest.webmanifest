@@ -1,0 +1,25 @@
+{
+  "name": "Calculadora de Notas",
+  "short_name": "Notas",
+  "description": "Calculadora de notas por corte y nota final de la materia.",
+  "start_url": "/ev-qalif/",
+  "scope": "/ev-qalif/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff7fa",
+  "theme_color": "#d96c95",
+  "icons": [
+    {
+      "src": "/ev-qalif/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/ev-qalif/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
