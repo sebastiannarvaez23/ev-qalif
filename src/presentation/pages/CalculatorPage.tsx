@@ -59,6 +59,9 @@ export function CalculatorPage() {
             <Button variant="ghost" onClick={cut.computeNeeded}>
               ¿Cuánto necesito para pasar?
             </Button>
+            <Button variant="ghost" onClick={cut.clean}>
+              limpiar
+            </Button>
           </div>
 
           <ResultBanner message={cut.result.message} tone={cut.result.tone} />
@@ -105,6 +108,9 @@ export function CalculatorPage() {
             <Button onClick={fin.computeFinal}>Calcular Nota Final</Button>
             <Button variant="secondary" onClick={fin.computeNeededThird}>
               ¿Qué necesito en Corte 3?
+            </Button>
+            <Button variant="ghost" onClick={fin.clean}>
+              limpiar
             </Button>
           </div>
 

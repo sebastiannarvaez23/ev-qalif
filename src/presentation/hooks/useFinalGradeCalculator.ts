@@ -91,6 +91,12 @@ export function useFinalGradeCalculator() {
     }
   }, [requireFields, calculateNeededThirdCut, notifier]);
 
+  const clean = useCallback(() => {
+    setCuts(EMPTY);
+    setTouched(new Set());
+    setResult({ message: "", tone: "neutral" });
+  }, []);
+
   return {
     cuts,
     result,
@@ -98,5 +104,6 @@ export function useFinalGradeCalculator() {
     set,
     computeFinal,
     computeNeededThird,
+    clean
   };
 }

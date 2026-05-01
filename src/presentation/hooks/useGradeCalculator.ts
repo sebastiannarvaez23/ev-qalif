@@ -133,6 +133,11 @@ export function useGradeCalculator() {
     }
   }, [validateAll, calculateNeededToPass]);
 
+  const clean = () => {
+    setRows([]);
+    setResult({ message: "", tone: "neutral" });
+  }
+
   return {
     rows,
     result,
@@ -144,5 +149,6 @@ export function useGradeCalculator() {
     updateWeight,
     computeAccumulated,
     computeNeeded,
+    clean
   };
 }
