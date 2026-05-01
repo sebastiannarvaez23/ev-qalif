@@ -21,7 +21,7 @@ export function CalculatorPage() {
       </header>
 
       <main className="container">
-        <Section title="Calculadora de Notas por Corte">
+        <Section title="Calcular Nota del Corte">
           <div className="grades">
             {cut.rows.length === 0 && (
               <p className="empty-hint">
@@ -67,7 +67,7 @@ export function CalculatorPage() {
           <ResultBanner message={cut.result.message} tone={cut.result.tone} />
         </Section>
 
-        <Section title="Nota Final de la Materia">
+        <Section title="Nota Final de la Asignatura">
           <div className="cuts-grid">
             <label className="cut-field">
               <span className="cut-field__label">Corte 1 (30%)</span>
